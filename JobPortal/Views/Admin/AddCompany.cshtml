@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h1>Add company</h1>
+
+<form method="post">
+
+    <div class="row mb-3">
+        <label class="col-sm-12 col-form-label">Company name</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" name="name" required />
+        </div>
+        <label class="col-sm-12 col-form-label">Location</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" name="location" required />
+        </div>
+    </div>
+    <button type="submit" asp-action="AddCompanyToTable" class="btn btn-success">Add</button>
+    <a class="btn btn-danger" asp-action="Admin">Cancel</a>
+</form>
+
