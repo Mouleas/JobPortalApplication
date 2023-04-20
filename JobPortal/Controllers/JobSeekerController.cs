@@ -30,11 +30,17 @@ namespace JobPortal.Controllers
                 string company = Request.Form["company"];
                 string location = Request.Form["location"];
 
+                Console.WriteLine(company+ " " + location);
+
+                if (salary == "")
+                {
+                    salary = "0";
+                }
+                int wage = Convert.ToInt32(salary);
                 try
                 {
-                    Console.WriteLine("hhh");
                     connection.Open();
-                    string querry = $"Select j.title, j.salary, c.name, c.location from Jobs j join Company c on j.company_id = c.id where j.title like '{role}%' ;";
+                    string querry = $"Select j.title, j.salary, c.name, c.location from Jobs j join Company c on j.company_id = c.id where (j.title like '%{role}%') and (c.name like '%{company}%') and (c.location like '%{location}%') and (j.salary > {wage});";
                     SqlCommand cmd = new SqlCommand(querry, connection);
 
                     SqlDataReader reader = cmd.ExecuteReader();

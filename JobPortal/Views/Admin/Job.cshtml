@@ -23,9 +23,11 @@
 </style>
 
 <div class="head">
-    <h3>Job List</h3>
+    <h3>@(ViewData["companyName"]) Job List</h3>
     <a class="btn btn-success" href="/Admin/AddJob?id=@(ViewData["id"])">Add Job</a>
 </div>
+
+<a class="btn btn-secondary" asp-action="Admin" asp-controller="Admin">Back</a>
 
 
 <hr></hr>

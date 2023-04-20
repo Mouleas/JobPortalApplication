@@ -2003,19 +2003,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\JobPortalApplication\\JobPortal\\JobPortal.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Job portal\\Job-Portal-Application\\JobPortal\\JobPortal\\JobPortal.csproj",
       "projectName": "JobPortal",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\JobPortalApplication\\JobPortal\\JobPortal.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\JobPortalApplication\\JobPortal\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Job portal\\Job-Portal-Application\\JobPortal\\JobPortal\\JobPortal.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\Job portal\\Job-Portal-Application\\JobPortal\\JobPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -99,7 +99,7 @@ namespace JobPortal.Controllers
             return RedirectToAction("Admin"); 
         }
 
-        public IActionResult Job(int id)
+        public IActionResult Job(int id, string companyName)
         {
             int Id = id;
 
@@ -131,6 +131,7 @@ namespace JobPortal.Controllers
                 Console.WriteLine(ex.Message);
             }
             ViewData["id"] = Id;
+            ViewData["companyName"] = companyName;
             return View(JobList);
         }
 
@@ -170,7 +171,7 @@ namespace JobPortal.Controllers
                 Console.WriteLine(ex.Message);
             }
 
-            return Job(8);
+            return RedirectToAction("Error","Home");
         }
 
 
@@ -239,7 +240,7 @@ namespace JobPortal.Controllers
                 Console.WriteLine(ex.Message);
             }
 
-            return Job(8);
+            return RedirectToAction("Error", "Home");
         }
 
       
@@ -307,7 +308,7 @@ namespace JobPortal.Controllers
                 Console.WriteLine(ex.Message);
             }
 
-            return Job(8);
+            return RedirectToAction("Error", "Home");
         }
 
 
