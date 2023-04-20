@@ -173,5 +173,163 @@ namespace JobPortal.Controllers
             return Job(8);
         }
 
+
+
+
+        public IActionResult EditCompany(int id)
+        {
+            CompanyViewModel obj = new CompanyViewModel();
+            try
+            {
+                String conn = configuration.GetConnectionString("JobPortal");
+                SqlConnection connection = new SqlConnection(conn);
+                connection.Open();
+
+                string query = $"SELECT * FROM COMPANY where id = {id}";
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    obj.id = (int)reader[0];
+                    obj.name = "" + reader[1];
+                    obj.location = "" + reader[2];
+
+                    
+                }
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return View(obj);
+        }
+
+
+        [HttpPost]
+        public IActionResult EditCompanyToTable()
+        {
+            Console.WriteLine("In edit post");
+
+            try
+            {
+                String conn = configuration.GetConnectionString("JobPortal");
+                SqlConnection connection = new SqlConnection(conn);
+                connection.Open();
+
+                string company = Request.Form["company"];
+                string location = Request.Form["location"];
+                int id = Convert.ToInt32(Request.Form["id"]);
+
+                string query = $"update company set name = '{company}' , location ='{location}' where id = {id};";
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+                sqlCommand.ExecuteNonQuery();
+
+                connection.Close();
+
+                return RedirectToAction("Admin");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return Job(8);
+        }
+
+      
+        public IActionResult EditJob(int id)
+        {
+            JobViewModel obj = new JobViewModel();
+            try
+            {
+                String conn = configuration.GetConnectionString("JobPortal");
+                SqlConnection connection = new SqlConnection(conn);
+                connection.Open();
+
+                string query = $"SELECT * FROM Jobs where id = {id}";
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    obj.id = (int)reader[0];
+                    obj.title = "" + reader[1];
+                    obj.salary = (int)reader[2];
+                    obj.companyId = (int)reader[3];
+
+
+
+                }
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return View(obj);
+        }
+
+
+        [HttpPost]
+        public IActionResult EditJobToTable()
+        {
+            Console.WriteLine("In job post");
+            try
+            {
+                String conn = configuration.GetConnectionString("JobPortal");
+                SqlConnection connection = new SqlConnection(conn);
+                connection.Open();
+
+                string title = Request.Form["title"];
+                int salary = Convert.ToInt32(Request.Form["salary"]);
+                int id = Convert.ToInt32(Request.Form["id"]);
+                int cid = Convert.ToInt32(Request.Form["cid"]);
+                string query = $"update Jobs set title = '{title}' , salary = '{salary}' where id = {id}";
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+                sqlCommand.ExecuteNonQuery();
+
+                connection.Close();
+
+                return RedirectToAction("job", "Admin", new { id = cid });
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return Job(8);
+        }
+
+
+        public IActionResult DeleteJob(int id)
+        {
+            try
+            {
+                String conn = configuration.GetConnectionString("JobPortal");
+                SqlConnection connection = new SqlConnection(conn);
+                connection.Open();
+                string query = $"DELETE FROM JOBS WHERE id={id}";
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+                sqlCommand.ExecuteNonQuery();
+                connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return RedirectToAction("Admin");
+        }
+
     }
 }

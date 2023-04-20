@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CompanyViewModel 
+
+<h1>Edit company</h1>
+
+<form method="post">
+
+    <div class="row mb-3">
+        <label class="col-sm-12 col-form-label">Company name</label>
+        <input type="hidden" class="form-control" value="@Model.id" name="id" />
+
+        <div class="col-sm-5">
+            <input type="text" class="form-control" value="@Model.name" name="company"  />
+        </div>
+        <label class="col-sm-12 col-form-label">Location</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" value="@Model.location" name="location"  />
+        </div>
+    </div>
+    <button type="submit" asp-action="EditCompanyToTable" asp-controller="Admin" class="btn btn-success">Update</button>
+    <a class="btn btn-danger" asp-action="Admin">Cancel</a>
+</form>
+

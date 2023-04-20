@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model JobViewModel
+
+
+<h1>Edit Job</h1>
+
+<form method="post">
+
+    <div class="row mb-3">
+        <input type="hidden" value="@Model.id" name="id" />
+        <input type="hidden" value="@Model.companyId" name="cid" />
+        <label class="col-sm-12 col-form-label">Job Title</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" value="@Model.title" name="title"  />
+        </div>
+        <label class="col-sm-12 col-form-label">Salary</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" value="@Model.salary" name="salary"  />
+        </div>
+
+    </div>
+    <button type="submit" asp-action="EditJobToTable" class="btn btn-success">Update</button>
+    <a class="btn btn-danger" href="/Admin/job?id=@Model.companyId">Cancel</a>
+</form>
+

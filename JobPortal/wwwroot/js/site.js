@@ -8,3 +8,9 @@ function getConfirmation(id) {
         location.replace("DeleteCompany?id="+id);
     }
 }
+
+function getDeleteConfirmation(id) {
+    if (confirm("Are you sure of deleting this data?")) {
+        location.replace("DeleteJob?id=" + id);
+    }
+}
