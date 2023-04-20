@@ -27,6 +27,7 @@
     <a class="btn btn-success" href="/Admin/AddJob?id=@(ViewData["id"])">Add Job</a>
 </div>
 
+
 <hr></hr>
 
 <table class="table table-striped table-bordered">
@@ -47,8 +48,8 @@
                 <td>@obj.title</td>
                 <td>@obj.salary</td>
                 <td>
-                    <button class="btn btn-primary">Edit</button>&nbsp;&nbsp;
-                    <a class="btn btn-danger" onclick="getConfirmation('@obj.id')">Delete</a>
+                    <a href="/Admin/EditJob?id=@obj.id" class="btn btn-primary">Edit</a>&nbsp;&nbsp;
+                    <a class="btn btn-danger" onclick="getDeleteConfirmation('@obj.id')">Delete</a>
                 </td>
             </tr>
         }

@@ -9,61 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JobPortal
 build_property.RootNamespace = JobPortal
-build_property.ProjectDir = C:\Users\HP\Desktop\Job portal\Job-Portal-Application\JobPortal\JobPortal\
+build_property.ProjectDir = C:\Users\DELL\source\repos\JobPortalApplication\JobPortal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Job portal\Job-Portal-Application\JobPortal\JobPortal
+build_property.MSBuildProjectDirectory = C:\Users\DELL\source\repos\JobPortalApplication\JobPortal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Admin/AddCompany.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/AddCompany.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ29tcGFueS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Admin/AddJob.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/AddJob.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkSm9iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Admin/Admin.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Admin/Job.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/EditCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENvbXBhbnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/EditJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEpvYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Admin/Job.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSm9iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Home/Index.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Home/Privacy.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/JobSeeker/Index.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/JobSeeker/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iU2Vla2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/LandingPage/Index.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/LandingPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Shared/Error.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/_ViewImports.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/_ViewStart.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Job portal/Job-Portal-Application/JobPortal/JobPortal/Views/Shared/_Layout.cshtml]
+[C:/Users/DELL/source/repos/JobPortalApplication/JobPortal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cv5wdao8z3

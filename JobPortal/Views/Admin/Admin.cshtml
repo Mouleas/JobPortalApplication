@@ -47,7 +47,7 @@
                 <td>@obj.location</td>
                 <td>
                     <a class="btn btn-warning" href="/Admin/job?id=@obj.id">View Job</a>&nbsp;&nbsp;
-                    <button class="btn btn-primary">Edit</button>&nbsp;&nbsp;
+                    <a class="btn btn-primary" href="/Admin/EditCompany?id=@obj.id">Edit</a>&nbsp;&nbsp;
                     <a class="btn btn-danger" onclick="getConfirmation('@obj.id')">Delete</a>
                 </td>
             </tr>
